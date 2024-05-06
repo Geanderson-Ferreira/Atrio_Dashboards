@@ -6,7 +6,7 @@ from os import environ
 import plotly.express as px
 import pyodbc
 
-load_dotenv()
+# load_dotenv()
 
 server = environ.get('SERVER')
 database = environ.get('DATABASE')
