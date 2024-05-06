@@ -13,6 +13,9 @@ database = environ.get('DATABASE')
 username = environ.get('DB_USER')
 password = environ.get('DB_PASSWORD')
 
+st.write(server)
+
+
 conn_str = f'DRIVER={{SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}'
 conn = pyodbc.connect(conn_str)
 
