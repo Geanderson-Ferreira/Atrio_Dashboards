@@ -16,7 +16,7 @@ password = environ.get('DB_PASSWORD')
 st.write(server)
 
 
-conn_str = f'DRIVER={{SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}'
+conn_str = f'DRIVER={{SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password};Trusted_Connection=yes;'
 conn = pyodbc.connect(conn_str)
 
 #Obtem os resultados das ultimas 30 coletas de informações
